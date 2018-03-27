@@ -1,6 +1,6 @@
 `Initial Code Development Finished`
 
-## ToDo: Upload to Maven Central and/or jcenter 
+### ToDo: Upload to Maven Central and/or jcenter 
 
 # LocaleRule
 Simple way to change device locale for Android Automation
