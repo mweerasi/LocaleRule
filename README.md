@@ -1,4 +1,6 @@
-`Still in Development`
+`Initial Code Development Finished`
+
+## ToDo: Upload to Maven Central and/or jcenter 
 
 # LocaleRule
 Simple way to change device locale for Android Automation
@@ -15,7 +17,7 @@ Add it to settings.gradle `include ':locale-rule'`
 To implement the rule for a test class, add the rule with the following line
 ```
 @Rule
-public final LocaleRule customLocaleRule = new LocaleRule();
+public final LocaleRule localeRule = new LocaleRule();
 ```
 Once the rule is added you can change a test to a specified language by adding ```@TestLocale("")``` before a test. The string inside should hold the locale you wish to run the test in.
 For example, to run a test in ```da-DK```:
