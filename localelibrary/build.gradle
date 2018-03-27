@@ -35,17 +35,23 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
 
-// best way to set group ID
-group = 'com.example'
-version = '1'
+// If your directory matches the name, you do not need to set archivesBaseName.
+archivesBaseName = "locale-rule"
+
 install {
     repositories.mavenInstaller {
-        // only necessary if artifact ID diverges from project name
-        // the latter defaults to project directory name and can be
-        // configured in settings.gradle
-        pom.artifactId = 'myName'
-        // shouldn't be needed as this is the default anyway
-        pom.packaging = 'jar'
+        pom.project {
+            group "com.mweerasi"
+            artifactId "localelibrary"
+            inceptionYear '2018'
+            licenses {
+                license {
+                    name 'The Apache Software License, Version 2.0'
+                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    distribution 'repo'
+                }
+            }
+        }
     }
 }
 
@@ -62,9 +68,9 @@ bintray {
         licenses = ['MIT']
         vcsUrl = 'https://github.com/bintray/gradle-bintray-plugin.git'
         version {
-            name = '1'
-            desc = 'Gradle Bintray Plugin 1.0 final'
-            vcsTag = '1'
+            name = '1.0.0'
+            desc = 'Locale library 1.0 final'
+            vcsTag = '1.0.0'
         }
     }
 }
