@@ -1,11 +1,15 @@
+`Still in Development`
+
 # LocaleRule
 Simple way to change device locale for Android Automation
 
 
 ## Setup
 Download .aar file from `https://bintray.com/mweerasi/locale-rule/localeRule#files/LocaleRule%2Flocale-rule%2Funspecified`
-Add it to the app:build.gradle `implementation(name: 'library', ext: 'aar')`
-Add it to settings.gradle
+
+Add it to the app:build.gradle `implementation(name: 'locale-rule:unspecified', ext: 'aar')`
+
+Add it to settings.gradle `include ':locale-rule'`
 
 ## Usage
 To implement the rule for a test class, add the rule with the following line
